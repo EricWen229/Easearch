@@ -6,7 +6,7 @@ ENV REFRESHED_AT 20170412
 
 COPY . /root/easearch/
 WORKDIR /root/easearch
-RUN mkdir Bin && make
+RUN make
 
 EXPOSE 8080
 ENTRYPOINT ["make", "run"]
