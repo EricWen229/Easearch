@@ -10,3 +10,4 @@ RUN mkdir Bin && make
 
 EXPOSE 8080
 ENTRYPOINT ["make", "run"]
+
