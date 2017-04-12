@@ -8,6 +8,8 @@ COPY . /root/easearch/
 WORKDIR /root/easearch
 RUN make
 
+ENV LD_LIBRARY_PATH=/usr/local/lib
+
 EXPOSE 8080
 ENTRYPOINT ["make", "run"]
 
